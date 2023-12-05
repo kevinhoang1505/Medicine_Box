@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MedicineBoxFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/slot_1"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="244dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/slot_2"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="40dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/slot_1"
+            app:layout_constraintStart_toEndOf="@+id/slot_1"
+            app:layout_constraintTop_toTopOf="@+id/slot_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/slot_3"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="40dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/slot_2"
+            app:layout_constraintStart_toEndOf="@+id/slot_2"
+            app:layout_constraintTop_toTopOf="@+id/slot_2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/slot_4"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="68dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/slot_1"
+            app:layout_constraintTop_toBottomOf="@+id/slot_1" />
+
+        <Button
+            android:id="@+id/slot_5"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="40dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/slot_4"
+            app:layout_constraintStart_toEndOf="@+id/slot_4"
+            app:layout_constraintTop_toTopOf="@+id/slot_4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/slot_6"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="40dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/slot_5"
+            app:layout_constraintStart_toEndOf="@+id/slot_5"
+            app:layout_constraintTop_toTopOf="@+id/slot_5" />
+
+        <Button
+            android:id="@+id/slot_7"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="64dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/slot_4"
+            app:layout_constraintTop_toBottomOf="@+id/slot_4" />
+
+        <Button
+            android:id="@+id/slot_8"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="40dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/slot_7"
+            app:layout_constraintStart_toEndOf="@+id/slot_7"
+            app:layout_constraintTop_toTopOf="@+id/slot_7"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/slot_9"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginStart="40dp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/slot_8"
+            app:layout_constraintStart_toEndOf="@+id/slot_8"
+            app:layout_constraintTop_toTopOf="@+id/slot_8"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/id_number"
+            android:layout_width="245dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="140dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/enter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="28dp"
+            android:backgroundTint="@color/yellow"
+            android:text="Send"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.833"
+            app:layout_constraintStart_toEndOf="@+id/id_number"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="127dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/download" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
